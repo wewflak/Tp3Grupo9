@@ -250,9 +250,7 @@ public class Principal {
 		case 8:
 			for(Figura fig: figuras) {
 				if(fig instanceof Cuadrado) {
-					System.out.println( " El elemento  es un cuadrado: " +fig);
-					System.out.println( " El área es: " +fig.CalcularArea());
-					System.out.println( " El perimetro es: " +fig.CalcularPerimetro());
+					System.out.println(fig.toString());
 				}else {
 					System.out.println("El elemento no es un cuadrado");
 				}
