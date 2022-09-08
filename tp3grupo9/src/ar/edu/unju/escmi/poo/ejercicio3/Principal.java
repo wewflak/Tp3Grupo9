@@ -182,9 +182,12 @@ public class Principal {
 					pos=aux;
 				figuras[pos] = nRectangulo;
 				System.out.println(pos);
-				System.out.println("entra");
+				System.out.println("Presione cualquier tecla para continuar...");
+		          new java.util.Scanner(System.in).nextLine();
 				}else {
 					System.out.println("El arreglo está lleno");
+					System.out.println("Presione cualquier tecla para continuar...");
+			          new java.util.Scanner(System.in).nextLine();
 				}
 				
 			} catch (Exception e) {
@@ -220,7 +223,8 @@ public class Principal {
 					pos=aux;
 				figuras[pos] = nTriangulo;
 				System.out.println(pos);
-				System.out.println("entra");
+				System.out.println("Presione cualquier tecla para continuar...");
+		          new java.util.Scanner(System.in).nextLine();
 				}else {
 					System.out.println("El arreglo está lleno");
 				}
@@ -243,13 +247,14 @@ public class Principal {
 		case 7:
 			for(Figura fig: figuras) {
 				if(fig instanceof Circulo) {
-					System.out.println( " El elemento  es un círculo: " +fig);
-					System.out.println( " El área es: " +fig.CalcularArea());
-					System.out.println( " El perimetro es: " +fig.CalcularPerimetro());
+					System.out.println(fig.toString());
 				}else {
 					System.out.println("El elemento no es un círculo");
 				}
 			}
+
+			System.out.println("Presione cualquier tecla para continuar...");
+			new java.util.Scanner(System.in).nextLine();
 			break;
 		case 8:
 			for(Figura fig: figuras) {
@@ -261,38 +266,42 @@ public class Principal {
 					System.out.println("El elemento no es un cuadrado");
 				}
 			}
+			System.out.println("Presione cualquier tecla para continuar...");
+	          new java.util.Scanner(System.in).nextLine();
 			break;
 		case 9:
 			for(Figura fig: figuras) {
 				if(fig instanceof Rectangulo) {
-					System.out.println( " El elemento  es un rectángulo: " +fig);
-					System.out.println( " El área es: " +fig.CalcularArea());
-					System.out.println( " El perimetro es: " +fig.CalcularPerimetro());
+					System.out.println(fig.toString());
 				}else {
 					System.out.println("El elemento no es un rectángulo");
 				}
 			}
+			System.out.println("Presione cualquier tecla para continuar...");
+	          new java.util.Scanner(System.in).nextLine();
 			break;
 		case 10:
 			for(Figura fig: figuras) {
-				if(fig instanceof Circulo) {
-					System.out.println( " El elemento  es un triángulo: " +fig);
-					System.out.println( " El área es: " +fig.CalcularArea());
-					System.out.println( " El perimetro es: " +fig.CalcularPerimetro());
+				if(fig instanceof Triangulo) {
+					System.out.println(fig.toString());
 				}else {
 					System.out.println("El elemento no es un triángulo");
 				}
 			}
+			System.out.println("Presione cualquier tecla para continuar...");
+	          new java.util.Scanner(System.in).nextLine();
 			break;
 		case 5:
 			for(int i=0; i<figuras.length;i++) {
 				
 				if(figuras[i]!=null) {
-					System.out.println("El elemento es: " +figuras[i].getColor());
+					System.out.println("El elemento es: " +figuras[i]);
 				}else {
 					System.out.println("No hay elemento");
 				}
 			}
+			System.out.println("Presione cualquier tecla para continuar...");
+	          new java.util.Scanner(System.in).nextLine();
 			break;
 		
 		case 6:
@@ -305,8 +314,12 @@ public class Principal {
 					System.out.println(" ");
 				}
 			}
+			System.out.println("Presione cualquier tecla para continuar...");
+	          new java.util.Scanner(System.in).nextLine();
 		}
-	};
+	}
+
+
 	
 	
 }

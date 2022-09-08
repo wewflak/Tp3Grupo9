@@ -19,4 +19,11 @@ public class Cuadrado extends Figura {
 		return dato1*4;
 	}
 
+	@Override
+	public String toString() {
+		return "Cuadrado [dato1=" + dato1 + ", color=" + color + ", CalcularArea()=" + CalcularArea()
+				+ ", CalcularPerimetro()=" + CalcularPerimetro() + ", getClass()=" + getClass() + "]";
+	}
+	
+
 }

@@ -30,4 +30,11 @@ public class Rectangulo extends Figura {
 		return 2 * (dato1 + getDato2());
 	}
 
+	@Override
+	public String toString() {
+		return "Rectangulo [ dato1=" + dato1 + ", color=" + color + ", dato2=" + getDato2()
+				+ ", CalcularArea()=" + CalcularArea() + ", CalcularPerimetro()=" + CalcularPerimetro()
+				+ ", getClass()=" + getClass() + "]";
+	}
+
 }

@@ -40,4 +40,12 @@ public class Triangulo extends Figura {
 		return dato1 + getDato2() + getDato3();
 	}
 
+	@Override
+	public String toString() {
+		return "Triangulo [dato2=" + dato2 + ", dato3=" + dato3 + ", dato1=" + dato1 + ", color=" + color
+				+ ", CalcularArea()=" + CalcularArea()
+				+ ", CalcularPerimetro()=" + CalcularPerimetro() + ", getClass()=" + getClass() + "]";
+	}
+	
+
 }

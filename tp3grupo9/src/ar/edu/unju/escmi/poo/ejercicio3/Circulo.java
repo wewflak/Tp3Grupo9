@@ -17,5 +17,10 @@ public class Circulo extends Figura {
 		// TODO Auto-generated method stub
 		return 2* PI * getDato1();
 	}
+	@Override
+	public String toString() {
+		return "Circulo [dato1=" + dato1 + ", color=" + color + ", CalcularArea()=" + CalcularArea()
+				+ ", CalcularPerimetro()=" + CalcularPerimetro() + ", getClass()=" + getClass() + "]";
+	}
 	
 }
