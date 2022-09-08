@@ -89,11 +89,9 @@ public class Principal {
 		try {
 			while(espacio!=true && i<figuras.length) {
 			if(figuras[i]==null) {
-				//System.out.println(i);
 				espacio=true;
 				
 				aux=i;
-				//System.out.println(aux);
 			}else {
 				espacio=false;
 				i++;
@@ -104,8 +102,7 @@ public class Principal {
 			figuras[pos] = nCirculo;
 			System.out.println("Presione cualquier tecla para continuar...");
 	          new java.util.Scanner(System.in).nextLine();
-			//System.out.println(pos);
-			//System.out.println("entra");
+
 			}else {
 				System.out.println("El arreglo está lleno");
 				System.out.println("Presione cualquier tecla para continuar...");
@@ -128,11 +125,9 @@ public class Principal {
 			try {
 				while(espacio!=true && i<figuras.length) {
 				if(figuras[i]==null) {
-					System.out.println(i);
 					espacio=true;
 					
 					aux=i;
-					System.out.println(aux);
 				}else {
 					espacio=false;
 					i++;
@@ -141,7 +136,6 @@ public class Principal {
 				if(espacio == true ) {
 					pos=aux;
 				figuras[pos] = nCuadrado;
-				System.out.println(pos);
 				System.out.println("Presione cualquier tecla para continuar...");
 		          new java.util.Scanner(System.in).nextLine();
 				}else {
@@ -209,11 +203,9 @@ public class Principal {
 			try {
 				while(espacio!=true && i<figuras.length) {
 				if(figuras[i]==null) {
-					System.out.println(i);
 					espacio=true;
 					
 					aux=i;
-					System.out.println(aux);
 				}else {
 					espacio=false;
 					i++;
@@ -222,7 +214,6 @@ public class Principal {
 				if(espacio == true ) {
 					pos=aux;
 				figuras[pos] = nTriangulo;
-				System.out.println(pos);
 				System.out.println("Presione cualquier tecla para continuar...");
 		          new java.util.Scanner(System.in).nextLine();
 				}else {
@@ -316,6 +307,7 @@ public class Principal {
 			}
 			System.out.println("Presione cualquier tecla para continuar...");
 	          new java.util.Scanner(System.in).nextLine();
+	          break;
 		}
 	}
 
