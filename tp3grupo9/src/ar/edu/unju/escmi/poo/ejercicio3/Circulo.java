@@ -15,7 +15,7 @@ public class Circulo extends Figura {
 	@Override
 	public double CalcularPerimetro() {
 		// TODO Auto-generated method stub
-		return 2*( PI * getDato1());
+		return 2* PI * getDato1();
 	}
 	
 }
